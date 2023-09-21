@@ -1,6 +1,6 @@
-import { PageViewCounter } from '../entities/PageViewCounter.entity';
+import { PageViewCounterEntity } from '../entities/page-view-counter-entity';
 
 export interface PageViewCounterRepository {
-	createPageViewCounter(key: string): Promise<PageViewCounter>;
-	incrementPageView(key: string): Promise<PageViewCounter | null>;
+	createPageViewCounter(key: string): Promise<PageViewCounterEntity>;
+	incrementPageView(key: string): Promise<PageViewCounterEntity | null>;
 }

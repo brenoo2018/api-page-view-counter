@@ -1,4 +1,4 @@
-import { PageViewCounter } from '../entities/PageViewCounter.entity';
+import { PageViewCounterEntity } from '../entities/page-view-counter-entity';
 import { InvalidKeyError } from '../errors/invalid-key-error';
 import { CounterNotFoundError } from '../errors/counter-not-found-error';
 import { PageViewCounterRepository } from '../repositories/page-view-counter-repository';
@@ -8,7 +8,7 @@ interface PageViewCounterRequest {
 	pageViewCounterRepository: PageViewCounterRepository;
 }
 
-export async function execute({ key, pageViewCounterRepository }: PageViewCounterRequest): Promise<PageViewCounter> {
+export async function execute({ key, pageViewCounterRepository }: PageViewCounterRequest): Promise<PageViewCounterEntity> {
 	if (!isValidKey(key)) {
 		throw new InvalidKeyError();
 	}
