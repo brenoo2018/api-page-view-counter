@@ -1,6 +1,6 @@
-name = "api-page-view-counter"
-main = "src/index.ts"
 compatibility_date = "2023-09-18"
+main = "src/index.ts"
+name = "api-page-view-counter"
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
@@ -49,3 +49,8 @@ compatibility_date = "2023-09-18"
 # [[migrations]]
 # tag = "v1"
 # new_classes = ["MyDurableObject"]
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_id = "4ac65a85-ebda-4d55-badd-e59446b000ce"
+database_name = "db_page_view_development"
