@@ -1,9 +1,9 @@
-import { PageViewCounter } from '../../entities/PageViewCounter.entity';
-import { PageViewCounterRepository } from '../../repositories/pageViewCounter.repository';
+import { PageViewCounterEntity } from '../../entities/page-view-counter-entity';
+import { PageViewCounterRepository } from '../../repositories/page-view-counter-repository';
 
-const pageViewCounters: PageViewCounter[] = [];
+const pageViewCounters: PageViewCounterEntity[] = [];
 
-const pageViewCounterInMemoryRepository: PageViewCounterRepository = {
+const InMemoryPageViewCounterRepository: PageViewCounterRepository = {
 	createPageViewCounter: async (key: string) => {
 		const counter = {
 			key,
@@ -25,4 +25,4 @@ const pageViewCounterInMemoryRepository: PageViewCounterRepository = {
 	},
 };
 
-export default pageViewCounterInMemoryRepository;
+export default InMemoryPageViewCounterRepository;

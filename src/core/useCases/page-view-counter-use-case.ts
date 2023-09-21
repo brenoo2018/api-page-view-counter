@@ -1,7 +1,7 @@
 import { PageViewCounter } from '../entities/PageViewCounter.entity';
-import { InvalidKeyError } from '../errors/InvalidKey.error';
-import { CounterNotFoundError } from '../errors/CounterNotFound.error';
-import { PageViewCounterRepository } from '../repositories/pageViewCounter.repository';
+import { InvalidKeyError } from '../errors/invalid-key-error';
+import { CounterNotFoundError } from '../errors/counter-not-found-error';
+import { PageViewCounterRepository } from '../repositories/page-view-counter-repository';
 
 interface PageViewCounterRequest {
 	key: string;
