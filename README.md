@@ -36,6 +36,10 @@ This API service was developed with the aim of solving the challenge proposed by
 
 I would like to thank the E-inscription company team for the opportunity for the challenge.
 
+## Notes
+
+The challenge asked not to create classes, but I chose to create custom classes just for errors
+
 ## License
 
 Nest is [MIT licensed](LICENSE).
