@@ -22,7 +22,7 @@ This API service was developed with the aim of solving the challenge proposed by
 - Run migrations: `npm run migrations`
 - Run unit tests: `npm run test`
 - Run unit tests with coverage: `npm run test:coverage`
-- Run run server: `npm run start`
+- Run server: `npm run start`
 
 ## Routes
 
