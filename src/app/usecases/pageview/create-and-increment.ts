@@ -18,7 +18,8 @@ export async function execute({ key, pageViewCounterRepository }: InputCreateAnd
 
 		updatedCounter = await pageViewCounterRepository.incrementPageViewCounter(createdCounter.key, incrementCount);
 	} else {
-		updatedCounter = await pageViewCounterRepository.incrementPageViewCounter(findCounter.key, findCounter.count);
+		const incrementCount = incrementCounter(findCounter.count);
+		updatedCounter = await pageViewCounterRepository.incrementPageViewCounter(findCounter.key, incrementCount);
 	}
 
 	if (updatedCounter < 0) {
