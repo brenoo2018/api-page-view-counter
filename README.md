@@ -13,7 +13,7 @@ This API service was developed with the aim of solving the challenge proposed by
 
 - Cloudflare Worker + D1
 - Wrangler
-- Node.js
+- Node.js (v18)
 - Vitest
 
 ## Quick start
