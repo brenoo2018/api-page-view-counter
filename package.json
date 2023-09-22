@@ -7,6 +7,7 @@
 	},
 	"scripts": {
 		"deploy": "wrangler deploy",
+		"migrations": "npx wrangler d1 execute db_page_view_development --local --file=./src/infra/repositories/schema.sql",
 		"start": "wrangler dev",
 		"test": "vitest",
 		"test:coverage": "vitest run --coverage"
